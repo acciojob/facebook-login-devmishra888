@@ -1,51 +1,57 @@
 <html>
   <head>
 	     <style>
-      *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f6f6f6;
     height: 100vh;
-    background-color:  #f6f6f6;
+
 }
 
 .left{
     display: inline-block;
     width: 450px;
     margin-top: 70px;
-
 }
+
 form{
     display: flex;
     width: 300px;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #ccc;
-    flex-direction: column;
-    gap: 10px;
-
+   box-shadow: 0 0 10px #ccc;
+   flex-direction: column;
+   gap: 10px;
+   
 }
-input{
+
+form.input{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
 }
-.login{
-    background-color:  #1877f2;
+.button{
+    background-color: #1877f2;
     border-radius: 5px;
     padding: 10px 20px;
 }
+
 a{
+    text-decoration: none;
     color: #1877f2;
 }
+
+
 .signup{
-   background-color: #42b72a;
+    background-color:#42b72a;
     border-radius: 5px;
     padding: 10px 20px;
 }
@@ -55,26 +61,40 @@ a{
     <title>Facebook Login</title>
   </head>
   <body>
-     <section class="logo left">
-   <img src="https://www.cdnlogo.com/logos/f/10/facebook.svg" alt="Facebook logo" width="400px" height="100px">
-   <br>Facebook helps you connect and share with the people in your life.</section>
+         <section class="left">
+<img src="Facebook-Logo-2019.png " width="300px" alt="Facebook logo" >
+<p>Facebook helps you connect and share with the people in your life.</p>
+
+    </section>
 
 
 
 
+<section class="right">
 
-<section class="logo right">  
 <form class="form1">
-<input type="text" id="email" placeholder="Email address or phone number"><br>
-<input type="password" id="password" placeholder="password"><br>
-<button class="login" type="submit">Log in</button><br><br>
+<input type="email" name="email" id="email" placeholder="Email address or phone number" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+<br><br>
 
-<a href="Forgotten account?">Forgotten account?</a>
-<button class="signup">Create new account</button>
-</form>    
+<input type="password" name="Password" id="password" placeholder="Password" style="border-radius: 5px; padding: 10px; border: 1px solid #ccc ;">
+<br><br>
 
-</section>  
+<button class="button" type="submit">Log in</button>
+<a href="#">Forgotten account?</a>
 
+<button class="signup" >
+    Create new account
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+    </div>
 
     <!-- Write your code here -->
   </body>
