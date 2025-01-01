@@ -1,8 +1,76 @@
 <html>
   <head>
+	     <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:  #f6f6f6;
+}
+
+.left{
+    display: inline-block;
+    width: 450px;
+    margin-top: 70px;
+
+}
+form{
+    display: flex;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    flex-direction: column;
+    gap: 10px;
+
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login{
+    background-color:  #1877f2;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+a{
+    color: #1877f2;
+}
+.signup{
+   background-color: #42b72a;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+    </style>
     <title>Facebook Login</title>
   </head>
   <body>
+
+	     <div class="logo left"><img src="https://www.cdnlogo.com/logos/f/10/facebook.svg" alt="Facebook logo" width="400px" height="100px"><br>Facebook helps you connect and share with the people in your life.</div>
+
+<div class="logo right">
+<form>
+<input type="text" id="email" placeholder="Email address or phone number"><br>
+<input type="password" id="password" placeholder="password"><br>
+<button class="login" type="submit">Log in</button><br><br>
+
+<a href="Forgotten account?">Forgotten account?</a>
+<button class="signup">Create new account</button>
+</form>    
+
+</div>
+
+
     <!-- Write your code here -->
   </body>
 </html>
